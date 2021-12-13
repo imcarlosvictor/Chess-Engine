@@ -200,6 +200,7 @@ CMakeFiles/game.dir/Window/window.cpp.o: ../Window/window.cpp \
   /usr/include/SDL2/SDL_system.h \
   /usr/include/SDL2/SDL_timer.h \
   /usr/include/SDL2/SDL_version.h \
+  /usr/include/SDL2/SDL_rect.h \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/iostream \
   /usr/include/c++/9/ostream \
@@ -500,6 +501,7 @@ CMakeFiles/game.dir/main.cpp.o: ../main.cpp \
   /usr/include/SDL2/SDL_system.h \
   /usr/include/SDL2/SDL_timer.h \
   /usr/include/SDL2/SDL_version.h \
+  /usr/include/SDL2/SDL_rect.h \
   /usr/include/c++/9/iostream \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/ios \

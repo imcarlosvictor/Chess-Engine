@@ -5,9 +5,9 @@
 #include <iostream>
 
 
-Window::Window(int width, int height) {
-	this->width_ = width;
-	this->height_ = height;
+Window::Window() {
+	this->width_ = 900;
+	this->height_ = 700;
 	this->isRunning_ = true;
 	this->renderer = NULL;
 	this->window = NULL;
@@ -42,11 +42,22 @@ void Window::CreateWindow() {
 		if (event.type == SDL_QUIT) {
 			break;
 		}
-		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
+		SDL_SetRenderDrawColor(renderer, 67, 70, 75, 1);
 		SDL_RenderClear(this->renderer);
 		SDL_RenderCopy(renderer, texture, NULL, NULL);
 		SDL_RenderPresent(this->renderer);
+		CreateBoard();
+		
 	}
 	isRunning_ = true;
+
 }
+
+void Window::CreateBoard() {
+		// Create a square
+		SDL_Rect sqr = {0, 0, 10, 10};
+		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+		SDL_RenderFillRect(renderer, &sqr);
+}
+
 

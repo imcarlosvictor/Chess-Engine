@@ -1,15 +1,18 @@
 #pragma once
 #include "SDL.h"
+#include "SDL_rect.h"
 
 /* #include "Window.cpp" */
 
 class Window
 {
 	public:
-		Window (int, int);
+		Window ();
 		~Window();
 
 		void CreateWindow();
+
+		void CreateBoard();
 
 	private:
 		int height_;

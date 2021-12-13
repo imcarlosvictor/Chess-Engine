@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	// Create a window
-	Window screen(600, 480);
+	Window screen;
 
 	return 0;
 }
