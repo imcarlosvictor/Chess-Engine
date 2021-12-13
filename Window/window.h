@@ -12,7 +12,7 @@ class Window
 
 		void CreateWindow();
 
-		void CreateBoard();
+		void CreateChessBoard();
 
 	private:
 		int height_;

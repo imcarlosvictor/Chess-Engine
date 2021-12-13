@@ -45,15 +45,17 @@ void Window::CreateWindow() {
 		SDL_SetRenderDrawColor(renderer, 67, 70, 75, 1);
 		SDL_RenderClear(this->renderer);
 		SDL_RenderCopy(renderer, texture, NULL, NULL);
+		// Display the chess board
+		CreateChessBoard();
+		// Update the window
 		SDL_RenderPresent(this->renderer);
-		CreateBoard();
 		
 	}
 	isRunning_ = true;
 
 }
 
-void Window::CreateBoard() {
+void Window::CreateChessBoard() {
 		// Create a square
 		SDL_Rect sqr = {0, 0, 10, 10};
 		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
