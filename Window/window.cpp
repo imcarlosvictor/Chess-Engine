@@ -9,8 +9,8 @@ Window::Window(int width, int height) {
 	this->width_ = width;
 	this->height_ = height;
 	this->isRunning_ = true;
-	this->renderer = nullptr;
-	this->window = nullptr;
+	this->renderer = NULL;
+	this->window = NULL;
 
 	CreateWindow();
 }
@@ -24,12 +24,29 @@ Window::~Window() {
 }
 
 void Window::CreateWindow() {
-	if (SDL_Init(SDL_INIT_VIDEO) == 0) {
-		SDL_CreateWindowAndRenderer(this->width_, this->height_, 0, &window, &renderer);
-		SDL_RenderClear(this->renderer);
-		SDL_RenderPresent(this->renderer);
-	} else {
-		std::cout << "Could not initialize SDL" << std::endl;
+	// Initialize SDL
+	if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+		fprintf(stderr, "Couldn't initialize SDL: %s\n", SDL_GetError());
+		exit(1);
+		this->~Window();
+		isRunning_ = false;
 	}
+
+	// Create Screen
+	if (SDL_CreateWindowAndRenderer(this->width_, this->height_, 0, &window, &renderer)) {
+		SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
+	}
+
+	while (1) {
+		SDL_PollEvent(&event);
+		if (event.type == SDL_QUIT) {
+			break;
+		}
+		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
+		SDL_RenderClear(this->renderer);
+		SDL_RenderCopy(renderer, texture, NULL, NULL);
+		SDL_RenderPresent(this->renderer);
+	}
+	isRunning_ = true;
 }
 
