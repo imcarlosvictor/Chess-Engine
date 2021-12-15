@@ -10,6 +10,7 @@ project(game)
 add_executable(game 
 	main.cpp
 	Window/window.cpp
+	Game/board.cpp
 )
 
 # Dependencies
@@ -23,3 +24,6 @@ INCLUDE_DIRECTORIES(${SDL2_INCLUDE_DIRS})
 
 # Linking SDL2 library with our project
 target_link_libraries(game ${SDL2_LIBRARIES})
+
+# add_subdirectory(/home/lucas/code/projects/Chess_Engine/CMakeLists.txt)
+

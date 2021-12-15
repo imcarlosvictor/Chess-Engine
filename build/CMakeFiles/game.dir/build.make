@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cv/code/projects/Chess_Engine
+CMAKE_SOURCE_DIR = /home/lucas/code/projects/Chess-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cv/code/projects/Chess_Engine/build
+CMAKE_BINARY_DIR = /home/lucas/code/projects/Chess-Engine/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/game.dir/depend.make
@@ -72,44 +72,60 @@ include CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/main.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/main.cpp.o: ../main.cpp
 CMakeFiles/game.dir/main.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cv/code/projects/Chess_Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/main.cpp.o -MF CMakeFiles/game.dir/main.cpp.o.d -o CMakeFiles/game.dir/main.cpp.o -c /home/cv/code/projects/Chess_Engine/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucas/code/projects/Chess-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/main.cpp.o -MF CMakeFiles/game.dir/main.cpp.o.d -o CMakeFiles/game.dir/main.cpp.o -c /home/lucas/code/projects/Chess-Engine/main.cpp
 
 CMakeFiles/game.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cv/code/projects/Chess_Engine/main.cpp > CMakeFiles/game.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lucas/code/projects/Chess-Engine/main.cpp > CMakeFiles/game.dir/main.cpp.i
 
 CMakeFiles/game.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cv/code/projects/Chess_Engine/main.cpp -o CMakeFiles/game.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lucas/code/projects/Chess-Engine/main.cpp -o CMakeFiles/game.dir/main.cpp.s
 
 CMakeFiles/game.dir/Window/window.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/Window/window.cpp.o: ../Window/window.cpp
 CMakeFiles/game.dir/Window/window.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cv/code/projects/Chess_Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/Window/window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/Window/window.cpp.o -MF CMakeFiles/game.dir/Window/window.cpp.o.d -o CMakeFiles/game.dir/Window/window.cpp.o -c /home/cv/code/projects/Chess_Engine/Window/window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucas/code/projects/Chess-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/Window/window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/Window/window.cpp.o -MF CMakeFiles/game.dir/Window/window.cpp.o.d -o CMakeFiles/game.dir/Window/window.cpp.o -c /home/lucas/code/projects/Chess-Engine/Window/window.cpp
 
 CMakeFiles/game.dir/Window/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Window/window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cv/code/projects/Chess_Engine/Window/window.cpp > CMakeFiles/game.dir/Window/window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lucas/code/projects/Chess-Engine/Window/window.cpp > CMakeFiles/game.dir/Window/window.cpp.i
 
 CMakeFiles/game.dir/Window/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Window/window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cv/code/projects/Chess_Engine/Window/window.cpp -o CMakeFiles/game.dir/Window/window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lucas/code/projects/Chess-Engine/Window/window.cpp -o CMakeFiles/game.dir/Window/window.cpp.s
+
+CMakeFiles/game.dir/Game/board.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/Game/board.cpp.o: ../Game/board.cpp
+CMakeFiles/game.dir/Game/board.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucas/code/projects/Chess-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/Game/board.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/Game/board.cpp.o -MF CMakeFiles/game.dir/Game/board.cpp.o.d -o CMakeFiles/game.dir/Game/board.cpp.o -c /home/lucas/code/projects/Chess-Engine/Game/board.cpp
+
+CMakeFiles/game.dir/Game/board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Game/board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lucas/code/projects/Chess-Engine/Game/board.cpp > CMakeFiles/game.dir/Game/board.cpp.i
+
+CMakeFiles/game.dir/Game/board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Game/board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lucas/code/projects/Chess-Engine/Game/board.cpp -o CMakeFiles/game.dir/Game/board.cpp.s
 
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/main.cpp.o" \
-"CMakeFiles/game.dir/Window/window.cpp.o"
+"CMakeFiles/game.dir/Window/window.cpp.o" \
+"CMakeFiles/game.dir/Game/board.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
 game: CMakeFiles/game.dir/main.cpp.o
 game: CMakeFiles/game.dir/Window/window.cpp.o
+game: CMakeFiles/game.dir/Game/board.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cv/code/projects/Chess_Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lucas/code/projects/Chess-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +137,6 @@ CMakeFiles/game.dir/clean:
 .PHONY : CMakeFiles/game.dir/clean
 
 CMakeFiles/game.dir/depend:
-	cd /home/cv/code/projects/Chess_Engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cv/code/projects/Chess_Engine /home/cv/code/projects/Chess_Engine /home/cv/code/projects/Chess_Engine/build /home/cv/code/projects/Chess_Engine/build /home/cv/code/projects/Chess_Engine/build/CMakeFiles/game.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lucas/code/projects/Chess-Engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucas/code/projects/Chess-Engine /home/lucas/code/projects/Chess-Engine /home/lucas/code/projects/Chess-Engine/build /home/lucas/code/projects/Chess-Engine/build /home/lucas/code/projects/Chess-Engine/build/CMakeFiles/game.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/game.dir/depend
 

@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/cv/code/projects/Chess_Engine/Window/window.cpp" "CMakeFiles/game.dir/Window/window.cpp.o" "gcc" "CMakeFiles/game.dir/Window/window.cpp.o.d"
-  "/home/cv/code/projects/Chess_Engine/main.cpp" "CMakeFiles/game.dir/main.cpp.o" "gcc" "CMakeFiles/game.dir/main.cpp.o.d"
+  "/home/lucas/code/projects/Chess-Engine/Game/board.cpp" "CMakeFiles/game.dir/Game/board.cpp.o" "gcc" "CMakeFiles/game.dir/Game/board.cpp.o.d"
+  "/home/lucas/code/projects/Chess-Engine/Window/window.cpp" "CMakeFiles/game.dir/Window/window.cpp.o" "gcc" "CMakeFiles/game.dir/Window/window.cpp.o.d"
+  "/home/lucas/code/projects/Chess-Engine/main.cpp" "CMakeFiles/game.dir/main.cpp.o" "gcc" "CMakeFiles/game.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

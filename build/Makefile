@@ -57,18 +57,18 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cv/code/projects/Chess_Engine
+CMAKE_SOURCE_DIR = /home/lucas/code/projects/Chess-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cv/code/projects/Chess_Engine/build
+CMAKE_BINARY_DIR = /home/lucas/code/projects/Chess-Engine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cv/code/projects/Chess_Engine/build/CMakeFiles /home/cv/code/projects/Chess_Engine/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/code/projects/Chess-Engine/build/CMakeFiles /home/lucas/code/projects/Chess-Engine/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cv/code/projects/Chess_Engine/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/code/projects/Chess-Engine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ game: cmake_check_build_system
 game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 .PHONY : game/fast
+
+Game/board.o: Game/board.cpp.o
+.PHONY : Game/board.o
+
+# target to build an object file
+Game/board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Game/board.cpp.o
+.PHONY : Game/board.cpp.o
+
+Game/board.i: Game/board.cpp.i
+.PHONY : Game/board.i
+
+# target to preprocess a source file
+Game/board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Game/board.cpp.i
+.PHONY : Game/board.cpp.i
+
+Game/board.s: Game/board.cpp.s
+.PHONY : Game/board.s
+
+# target to generate assembly for a file
+Game/board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Game/board.cpp.s
+.PHONY : Game/board.cpp.s
 
 Window/window.o: Window/window.cpp.o
 .PHONY : Window/window.o
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... game"
+	@echo "... Game/board.o"
+	@echo "... Game/board.i"
+	@echo "... Game/board.s"
 	@echo "... Window/window.o"
 	@echo "... Window/window.i"
 	@echo "... Window/window.s"

@@ -1,16 +1,11 @@
 #include "window.h"
 
-#include <stdio.h>
-#include <cstdio>
-#include <iostream>
-
-
 Window::Window() {
 	this->width_ = 900;
 	this->height_ = 700;
 	this->isRunning_ = true;
-	this->renderer = NULL;
-	this->window = NULL;
+	renderer = NULL;
+	window = NULL;
 
 	CreateWindow();
 }
@@ -43,23 +38,33 @@ void Window::CreateWindow() {
 			break;
 		}
 		SDL_SetRenderDrawColor(renderer, 67, 70, 75, 1);
-		SDL_RenderClear(this->renderer);
+		SDL_RenderClear(renderer);
 		SDL_RenderCopy(renderer, texture, NULL, NULL);
 		// Display the chess board
-		CreateChessBoard();
+		DisplayChessBoard();
 		// Update the window
-		SDL_RenderPresent(this->renderer);
+		SDL_RenderPresent(renderer);
 		
 	}
 	isRunning_ = true;
-
 }
 
-void Window::CreateChessBoard() {
-		// Create a square
-		SDL_Rect sqr = {0, 0, 10, 10};
-		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-		SDL_RenderFillRect(renderer, &sqr);
+void DisplayChessBoard() {
+	ChessBoard board;
 }
 
+struct SDL_Renderer Window::getRenderer() {
+	return renderer;
+}
 
+struct SDL_Window Window::getWindow() {
+	return window;
+}
+
+struct SDL_Texture Window::getTexture() {
+	return texture;
+}
+
+SDL_Event Window::getEvent() {
+	return event;
+}

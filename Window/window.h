@@ -1,8 +1,11 @@
 #pragma once
+#include <stdio.h>
+#include <cstdio>
+#include <iostream>
 #include "SDL.h"
-#include "SDL_rect.h"
+#include "../Game/board.h"
 
-/* #include "Window.cpp" */
+
 
 class Window
 {
@@ -11,15 +14,23 @@ class Window
 		~Window();
 
 		void CreateWindow();
+		void DisplayChessBoard();
 
-		void CreateChessBoard();
+		SDL_Renderer getRenderer();
+		SDL_Window getWindow();
+		SDL_Texture getTexture();
+		SDL_Event getEvent();
+		int getheight();
+		int getWidth();
+		bool isProgramRunning();
+
 
 	private:
+	 	SDL_Renderer *renderer;
+	 	SDL_Window *window; 
+	 	SDL_Texture *texture;
+	 	SDL_Event event;
 		int height_;
 		int width_;
 		bool isRunning_;
-		SDL_Renderer *renderer;
-		SDL_Window *window; 
-		SDL_Texture *texture;
-		SDL_Event event;
 };
