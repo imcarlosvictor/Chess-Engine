@@ -1,44 +1,44 @@
 #include "pieces.h"
 
-Piece::Piece(std::string name, Color color, int value, int pos_val[64]) {
-	set_piece(name);
+ChessPiece::ChessPiece(Pieces piece, Color color, MaterialValue value, int pos_val[64]) {
+	set_piece(piece);
 	set_color(color);
 	set_material_value(value);
 	set_positional_value(arr);
 }
 
-Piece::~Piece {
-	delete Piece;
+ChessPiece::~ChessPiece {
+	delete ChessPiece;
 }
 
-void Piece::Move() {
-
-}
-
-bool Piece::IsMoveValid() {
+void ChessPiece::Move() {
 
 }
 
-void Piece::Capture() {
+bool ChessPiece::IsMoveValid() {
 
 }
 
-void Piece::Promote(Piece new_piece) {
+void ChessPiece::Capture() {
 
 }
 
-void Piece::set_piece(std::string name) const {
+void ChessPiece::Promote(Pieces new_piece) {
+
+}
+
+void ChessPiece::set_piece(Pieces piece) const {
 	this->piece_ = name;
 }
 
-void Piece::set_color(Color color) const {
+void ChessPiece::set_color(Color color) const {
 	this->color_ = color;
 }
 
-void Piece::set_material_value(int value) const {
+void ChessPiece::set_material_value(MaterialValue value) const {
 	this->set_material_value = value;
 }
 
-void Piece::set_positional_value(int &pos_val[64]) const {
+void ChessPiece::set_positional_value(int &pos_val[64]) const {
 	this->positional_value = pos_val;
 }
