@@ -153,6 +153,30 @@ Game/board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Game/board.cpp.s
 .PHONY : Game/board.cpp.s
 
+Game/pieces.o: Game/pieces.cpp.o
+.PHONY : Game/pieces.o
+
+# target to build an object file
+Game/pieces.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Game/pieces.cpp.o
+.PHONY : Game/pieces.cpp.o
+
+Game/pieces.i: Game/pieces.cpp.i
+.PHONY : Game/pieces.i
+
+# target to preprocess a source file
+Game/pieces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Game/pieces.cpp.i
+.PHONY : Game/pieces.cpp.i
+
+Game/pieces.s: Game/pieces.cpp.s
+.PHONY : Game/pieces.s
+
+# target to generate assembly for a file
+Game/pieces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Game/pieces.cpp.s
+.PHONY : Game/pieces.cpp.s
+
 Window/window.o: Window/window.cpp.o
 .PHONY : Window/window.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... Game/board.o"
 	@echo "... Game/board.i"
 	@echo "... Game/board.s"
+	@echo "... Game/pieces.o"
+	@echo "... Game/pieces.i"
+	@echo "... Game/pieces.s"
 	@echo "... Window/window.o"
 	@echo "... Window/window.i"
 	@echo "... Window/window.s"

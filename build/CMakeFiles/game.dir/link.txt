@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++14 -g CMakeFiles/game.dir/main.cpp.o CMakeFiles/game.dir/Window/window.cpp.o CMakeFiles/game.dir/Game/board.cpp.o -o game  -lSDL2 
+/usr/bin/c++  -std=c++14 -g CMakeFiles/game.dir/main.cpp.o CMakeFiles/game.dir/Window/window.cpp.o CMakeFiles/game.dir/Game/board.cpp.o CMakeFiles/game.dir/Game/pieces.cpp.o -o game  -lSDL2 

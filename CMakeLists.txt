@@ -11,6 +11,7 @@ add_executable(game
 	main.cpp
 	Window/window.cpp
 	Game/board.cpp
+	Game/pieces.cpp
 )
 
 # Dependencies

@@ -3,7 +3,7 @@
 Window::Window() {
 	this->width_ = 900;
 	this->height_ = 700;
-	this->isRunning_ = true;
+	this->is_running_ = true;
 	renderer = NULL;
 	window = NULL;
 
@@ -24,7 +24,7 @@ void Window::CreateWindow() {
 		fprintf(stderr, "Couldn't initialize SDL: %s\n", SDL_GetError());
 		exit(1);
 		this->~Window();
-		isRunning_ = false;
+		is_running_ = false;
 	}
 
 	// Create Screen
@@ -46,25 +46,25 @@ void Window::CreateWindow() {
 		SDL_RenderPresent(renderer);
 		
 	}
-	isRunning_ = true;
+	is_running_ = true;
 }
 
 void DisplayChessBoard() {
 	ChessBoard board;
 }
 
-struct SDL_Renderer Window::getRenderer() {
+struct SDL_Renderer* Window::get_renderer() {
 	return renderer;
 }
 
-struct SDL_Window Window::getWindow() {
+struct SDL_Window* Window::get_window() {
 	return window;
 }
 
-struct SDL_Texture Window::getTexture() {
+struct SDL_Texture* Window::get_texture() {
 	return texture;
 }
 
-SDL_Event Window::getEvent() {
+SDL_Event Window::get_event() {
 	return event;
 }

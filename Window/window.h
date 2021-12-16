@@ -16,13 +16,13 @@ class Window
 		void CreateWindow();
 		void DisplayChessBoard();
 
-		SDL_Renderer getRenderer();
-		SDL_Window getWindow();
-		SDL_Texture getTexture();
-		SDL_Event getEvent();
-		int getheight();
-		int getWidth();
-		bool isProgramRunning();
+		SDL_Renderer* get_renderer();
+		SDL_Window* get_window();
+		SDL_Texture* get_texture();
+		SDL_Event get_event();
+		int get_height();
+		int get_width();
+		bool IsProgramRunning();
 
 
 	private:
@@ -32,5 +32,5 @@ class Window
 	 	SDL_Event event;
 		int height_;
 		int width_;
-		bool isRunning_;
+		bool is_running_;
 };
