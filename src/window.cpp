@@ -1,4 +1,4 @@
-#include "window.h"
+#include "include/window.h"
 
 Window::Window() {
 	this->width_ = 900;
@@ -53,18 +53,3 @@ void DisplayChessBoard() {
 	ChessBoard board;
 }
 
-struct SDL_Renderer* Window::get_renderer() {
-	return renderer;
-}
-
-struct SDL_Window* Window::get_window() {
-	return window;
-}
-
-struct SDL_Texture* Window::get_texture() {
-	return texture;
-}
-
-SDL_Event Window::get_event() {
-	return event;
-}

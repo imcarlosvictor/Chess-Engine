@@ -239,4 +239,5 @@ CMakeFiles/game.dir/Window/window.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /home/lucas/code/projects/Chess-Engine/Window/../Game/board.h \
- /usr/include/SDL2/SDL_rect.h
+ /usr/include/SDL2/SDL_rect.h \
+ /home/lucas/code/projects/Chess-Engine/Window/../Game/../Game/pieces.h

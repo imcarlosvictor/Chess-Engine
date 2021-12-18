@@ -4,7 +4,8 @@
 #include <string>
 
 #include "SDL_rect.h"
-#include "../Window/window.h"
+#include "window.h"
+#include "pieces.h"
 
 
 class ChessBoard
@@ -14,4 +15,17 @@ class ChessBoard
 		~ChessBoard();
 
 		void CreateChessBoard();
+};
+
+class ChessTile
+{
+	public:
+		ChessTile();
+		~ChessTile();
+
+		Piece AddPiece(Piece);
+		void RemovePiece();
+
+	private:
+		long piece_on_tile;
 };

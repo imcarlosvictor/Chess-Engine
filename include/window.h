@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <cstdio>
 #include <iostream>
-#include "SDL.h"
-#include "../Game/board.h"
 
+#include "SDL.h"
+#include "board.h"
 
 
 class Window
@@ -16,20 +16,16 @@ class Window
 		void CreateWindow();
 		void DisplayChessBoard();
 
-		SDL_Renderer* get_renderer();
-		SDL_Window* get_window();
-		SDL_Texture* get_texture();
-		SDL_Event get_event();
 		int get_height();
 		int get_width();
 		bool IsProgramRunning();
 
+	 	static SDL_Renderer *renderer;
+	 	static SDL_Window *window; 
+	 	static SDL_Texture *texture;
+	 	static SDL_Event event;
 
 	private:
-	 	SDL_Renderer *renderer;
-	 	SDL_Window *window; 
-	 	SDL_Texture *texture;
-	 	SDL_Event event;
 		int height_;
 		int width_;
 		bool is_running_;
