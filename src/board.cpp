@@ -1,4 +1,4 @@
-#include "include/board.h"
+#include "../include/board.h"
 
 
 ChessBoard::ChessBoard() {
@@ -22,7 +22,6 @@ void ChessBoard::CreateChessBoard() {
 			SDL_Rect *coord;
 			SDL_SetRenderDrawColor(Window::renderer, 0, 0, 0, 255);
 			SDL_RenderFillRect(Window::renderer, coord);
-			/* square.x = */ 
 		} else {
 			/* Black Square */
 			SDL_Rect *coord;

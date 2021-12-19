@@ -1,4 +1,4 @@
-#include "include/pieces.h"
+#include "../include/pieces.h"
 
 Piece::Piece(ChessPieces ch_piece, int pos_val[64]) {
 }

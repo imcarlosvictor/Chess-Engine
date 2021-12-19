@@ -1,4 +1,4 @@
-#include "include/window.h"
+#include "../include/window.h"
 
 Window::Window() {
 	this->width_ = 900;
@@ -31,7 +31,7 @@ void Window::CreateWindow() {
 	if (SDL_CreateWindowAndRenderer(this->width_, this->height_, 0, &window, &renderer)) {
 		SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
 	}
-
+	
 	while (1) {
 		SDL_PollEvent(&event);
 		if (event.type == SDL_QUIT) {
@@ -44,7 +44,6 @@ void Window::CreateWindow() {
 		DisplayChessBoard();
 		// Update the window
 		SDL_RenderPresent(renderer);
-		
 	}
 	is_running_ = true;
 }
@@ -52,4 +51,3 @@ void Window::CreateWindow() {
 void DisplayChessBoard() {
 	ChessBoard board;
 }
-
