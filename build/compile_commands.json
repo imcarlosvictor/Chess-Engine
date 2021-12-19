@@ -1,22 +1,7 @@
 [
 {
   "directory": "/home/lucas/code/projects/Chess-Engine/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -I/usr/include/SDL2 -I/home/lucas/code/projects/Chess-Engine  -std=c++14 -g -o CMakeFiles/game.dir/src/main.cpp.o -c /home/lucas/code/projects/Chess-Engine/src/main.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -I/usr/include/SDL2 -I/usr/lib/x86_64-linux-gnu/pkgconfig/sdl2.pc  -std=c++0x -g -o CMakeFiles/chess.dir/src/main.cpp.o -c /home/lucas/code/projects/Chess-Engine/src/main.cpp",
   "file": "/home/lucas/code/projects/Chess-Engine/src/main.cpp"
-},
-{
-  "directory": "/home/lucas/code/projects/Chess-Engine/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -I/usr/include/SDL2 -I/home/lucas/code/projects/Chess-Engine  -std=c++14 -g -o CMakeFiles/game.dir/src/window.cpp.o -c /home/lucas/code/projects/Chess-Engine/src/window.cpp",
-  "file": "/home/lucas/code/projects/Chess-Engine/src/window.cpp"
-},
-{
-  "directory": "/home/lucas/code/projects/Chess-Engine/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -I/usr/include/SDL2 -I/home/lucas/code/projects/Chess-Engine  -std=c++14 -g -o CMakeFiles/game.dir/src/board.cpp.o -c /home/lucas/code/projects/Chess-Engine/src/board.cpp",
-  "file": "/home/lucas/code/projects/Chess-Engine/src/board.cpp"
-},
-{
-  "directory": "/home/lucas/code/projects/Chess-Engine/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -I/usr/include/SDL2 -I/home/lucas/code/projects/Chess-Engine  -std=c++14 -g -o CMakeFiles/game.dir/src/pieces.cpp.o -c /home/lucas/code/projects/Chess-Engine/src/pieces.cpp",
-  "file": "/home/lucas/code/projects/Chess-Engine/src/pieces.cpp"
 }
 ]

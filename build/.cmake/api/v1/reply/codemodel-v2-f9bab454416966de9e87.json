@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "game",
+					"name" : "chess",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "game::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-game-Debug-968f13e91e1d7953d4dc.json",
-					"name" : "game",
+					"id" : "chess::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-chess-Debug-cf58019413929e961fce.json",
+					"name" : "chess",
 					"projectIndex" : 0
 				}
 			]

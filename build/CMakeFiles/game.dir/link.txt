@@ -1,1 +1,1 @@
-/bin/x86_64-linux-gnu-g++-9  -std=c++14 -g CMakeFiles/game.dir/src/main.cpp.o CMakeFiles/game.dir/src/window.cpp.o CMakeFiles/game.dir/src/board.cpp.o CMakeFiles/game.dir/src/pieces.cpp.o -o game  -lSDL2 
+/bin/x86_64-linux-gnu-g++-9 -g CMakeFiles/game.dir/src/main.cpp.o -o game  -lSDL2 

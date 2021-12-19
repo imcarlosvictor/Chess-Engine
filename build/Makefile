@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named game
+# Target rules for targets named chess
 
 # Build rule for target.
-game: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game
-.PHONY : game
+chess: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chess
+.PHONY : chess
 
 # fast build rule for target.
-game/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
-.PHONY : game/fast
-
-src/board.o: src/board.cpp.o
-.PHONY : src/board.o
-
-# target to build an object file
-src/board.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/board.cpp.o
-.PHONY : src/board.cpp.o
-
-src/board.i: src/board.cpp.i
-.PHONY : src/board.i
-
-# target to preprocess a source file
-src/board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/board.cpp.i
-.PHONY : src/board.cpp.i
-
-src/board.s: src/board.cpp.s
-.PHONY : src/board.s
-
-# target to generate assembly for a file
-src/board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/board.cpp.s
-.PHONY : src/board.cpp.s
+chess/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/build
+.PHONY : chess/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -166,7 +142,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,56 +150,8 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/pieces.o: src/pieces.cpp.o
-.PHONY : src/pieces.o
-
-# target to build an object file
-src/pieces.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/pieces.cpp.o
-.PHONY : src/pieces.cpp.o
-
-src/pieces.i: src/pieces.cpp.i
-.PHONY : src/pieces.i
-
-# target to preprocess a source file
-src/pieces.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/pieces.cpp.i
-.PHONY : src/pieces.cpp.i
-
-src/pieces.s: src/pieces.cpp.s
-.PHONY : src/pieces.s
-
-# target to generate assembly for a file
-src/pieces.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/pieces.cpp.s
-.PHONY : src/pieces.cpp.s
-
-src/window.o: src/window.cpp.o
-.PHONY : src/window.o
-
-# target to build an object file
-src/window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/window.cpp.o
-.PHONY : src/window.cpp.o
-
-src/window.i: src/window.cpp.i
-.PHONY : src/window.i
-
-# target to preprocess a source file
-src/window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/window.cpp.i
-.PHONY : src/window.cpp.i
-
-src/window.s: src/window.cpp.s
-.PHONY : src/window.s
-
-# target to generate assembly for a file
-src/window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/window.cpp.s
-.PHONY : src/window.cpp.s
 
 # Help Target
 help:
@@ -233,19 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... game"
-	@echo "... src/board.o"
-	@echo "... src/board.i"
-	@echo "... src/board.s"
+	@echo "... chess"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/pieces.o"
-	@echo "... src/pieces.i"
-	@echo "... src/pieces.s"
-	@echo "... src/window.o"
-	@echo "... src/window.i"
-	@echo "... src/window.s"
 .PHONY : help
 
 
