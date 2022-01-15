@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/lucas/code/projects/Chess-Engine/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -I/usr/include/SDL2 -I/usr/lib/x86_64-linux-gnu/pkgconfig/sdl2.pc  -std=c++0x -g -o CMakeFiles/chess.dir/src/main.cpp.o -c /home/lucas/code/projects/Chess-Engine/src/main.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -I/home/lucas/code/projects/Chess-Engine/src -g -o CMakeFiles/chessEngine.dir/src/main.cpp.o -c /home/lucas/code/projects/Chess-Engine/src/main.cpp",
   "file": "/home/lucas/code/projects/Chess-Engine/src/main.cpp"
 }
 ]

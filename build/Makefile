@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named chess
+# Target rules for targets named chessEngine
 
 # Build rule for target.
-chess: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chess
-.PHONY : chess
+chessEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chessEngine
+.PHONY : chessEngine
 
 # fast build rule for target.
-chess/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/build
-.PHONY : chess/fast
+chessEngine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chessEngine.dir/build.make CMakeFiles/chessEngine.dir/build
+.PHONY : chessEngine/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chessEngine.dir/build.make CMakeFiles/chessEngine.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +142,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chessEngine.dir/build.make CMakeFiles/chessEngine.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +150,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chessEngine.dir/build.make CMakeFiles/chessEngine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... chess"
+	@echo "... chessEngine"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

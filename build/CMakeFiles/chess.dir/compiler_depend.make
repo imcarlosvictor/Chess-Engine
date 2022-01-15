@@ -172,6 +172,7 @@ CMakeFiles/chess.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/bits/istream.tcc \
+  ../include/window.h \
   /usr/include/SDL2/SDL.h \
   /usr/include/SDL2/SDL_main.h \
   /usr/include/SDL2/SDL_stdinc.h \
@@ -299,15 +300,12 @@ CMakeFiles/chess.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/SDL2/SDL_system.h \
   /usr/include/SDL2/SDL_timer.h \
   /usr/include/SDL2/SDL_version.h \
-  ../include/window.h \
   ../include/board.h \
   /usr/include/SDL2/SDL_rect.h \
   ../include/pieces.h
 
 
 ../include/board.h:
-
-../include/window.h:
 
 /usr/include/SDL2/SDL_messagebox.h:
 
@@ -360,6 +358,8 @@ CMakeFiles/chess.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/9/include/pconfigintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/movdirintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/vpclmulqdqintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -422,6 +422,8 @@ CMakeFiles/chess.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/9/ext/string_conversions.h:
 
 /usr/include/SDL2/SDL_cpuinfo.h:
+
+../include/window.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/avxintrin.h:
 
@@ -864,8 +866,6 @@ CMakeFiles/chess.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/9/include/xsavesintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/avx512vlbwintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/vpclmulqdqintrin.h:
 
 /usr/include/c++/9/clocale:
 

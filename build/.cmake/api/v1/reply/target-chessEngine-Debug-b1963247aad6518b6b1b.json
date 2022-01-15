@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "chess"
+			"path" : "chessEngine"
 		}
 	],
 	"backtrace" : 1,
@@ -11,8 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"TARGET_LINK_LIBRARIES",
-			"INCLUDE_DIRECTORIES"
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -26,19 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 77,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 17,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 16,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -49,18 +42,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -std=c++0x -g"
+					"fragment" : "-g"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"path" : "/usr/include/SDL2"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "/usr/lib/x86_64-linux-gnu/pkgconfig/sdl2.pc"
+					"backtrace" : 2,
+					"path" : "/home/lucas/code/projects/Chess-Engine/src"
 				}
 			],
 			"language" : "CXX",
@@ -70,29 +59,24 @@
 			]
 		}
 	],
-	"id" : "chess::@6890427a1f51a3e7e1df",
+	"id" : "chessEngine::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-std=c++0x -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "-lSDL2",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "chess",
-	"nameOnDisk" : "chess",
+	"name" : "chessEngine",
+	"nameOnDisk" : "chessEngine",
 	"paths" : 
 	{
 		"build" : ".",

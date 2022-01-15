@@ -144,7 +144,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=chess
+CMAKE_PROJECT_NAME:STATIC=chessEngine
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/bin/x86_64-linux-gnu-ranlib
@@ -214,6 +214,15 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Value Computed by CMake
+SDL2Test_BINARY_DIR:STATIC=/home/lucas/code/projects/Chess-Engine/build
+
+//Value Computed by CMake
+SDL2Test_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SDL2Test_SOURCE_DIR:STATIC=/home/lucas/code/projects/Chess-Engine
+
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SDL2
 
@@ -230,6 +239,15 @@ SDLMAIN_LIBRARY:FILEPATH=SDLMAIN_LIBRARY-NOTFOUND
 SDL_INCLUDE_DIR:PATH=SDL_INCLUDE_DIR-NOTFOUND
 
 //Value Computed by CMake
+chessEngine_BINARY_DIR:STATIC=/home/lucas/code/projects/Chess-Engine/build
+
+//Value Computed by CMake
+chessEngine_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+chessEngine_SOURCE_DIR:STATIC=/home/lucas/code/projects/Chess-Engine
+
+//Value Computed by CMake
 chess_BINARY_DIR:STATIC=/home/lucas/code/projects/Chess-Engine/build
 
 //Value Computed by CMake
@@ -237,6 +255,15 @@ chess_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 chess_SOURCE_DIR:STATIC=/home/lucas/code/projects/Chess-Engine
+
+//Value Computed by CMake
+chessengine_BINARY_DIR:STATIC=/home/lucas/code/projects/Chess-Engine/build
+
+//Value Computed by CMake
+chessengine_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+chessengine_SOURCE_DIR:STATIC=/home/lucas/code/projects/Chess-Engine
 
 //Value Computed by CMake
 game_BINARY_DIR:STATIC=/home/lucas/code/projects/Chess-Engine/build

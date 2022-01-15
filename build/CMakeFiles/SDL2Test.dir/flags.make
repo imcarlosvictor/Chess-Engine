@@ -4,7 +4,7 @@
 # compile CXX with /bin/x86_64-linux-gnu-g++-9
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL2 -I/usr/lib/x86_64-linux-gnu/pkgconfig/sdl2.pc
+CXX_INCLUDES = 
 
-CXX_FLAGS =  -std=c++0x -lSDL2main -g
+CXX_FLAGS = -g
 

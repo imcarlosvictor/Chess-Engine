@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9 -g CMakeFiles/chessengine.dir/src/main.cpp.o -o chessengine   -L/home/lucas/code/projects/Chess-Engine/lib 

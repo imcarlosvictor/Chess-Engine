@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "chess"
+			"value" : "chessEngine"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1526,6 +1526,42 @@
 			"value" : ""
 		},
 		{
+			"name" : "SDL2Test_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/lucas/code/projects/Chess-Engine/build"
+		},
+		{
+			"name" : "SDL2Test_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "SDL2Test_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/lucas/code/projects/Chess-Engine"
+		},
+		{
 			"name" : "SDL2_CFLAGS",
 			"properties" : 
 			[
@@ -2042,6 +2078,42 @@
 			"value" : "1"
 		},
 		{
+			"name" : "chessEngine_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/lucas/code/projects/Chess-Engine/build"
+		},
+		{
+			"name" : "chessEngine_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "chessEngine_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/lucas/code/projects/Chess-Engine"
+		},
+		{
 			"name" : "chess_BINARY_DIR",
 			"properties" : 
 			[
@@ -2067,6 +2139,42 @@
 		},
 		{
 			"name" : "chess_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/lucas/code/projects/Chess-Engine"
+		},
+		{
+			"name" : "chessengine_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/lucas/code/projects/Chess-Engine/build"
+		},
+		{
+			"name" : "chessengine_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "chessengine_SOURCE_DIR",
 			"properties" : 
 			[
 				{

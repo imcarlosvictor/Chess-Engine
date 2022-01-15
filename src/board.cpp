@@ -18,6 +18,7 @@ void ChessBoard::CreateChessBoard() {
 		std::string coord = alpha[i] + numeric[i];
 		// Create a square
 		if (i == 0 || i % 2 == 0) {
+			// FIX: create an alias instead of a pointer
 			/* White Square */ 
 			SDL_Rect *coord;
 			SDL_SetRenderDrawColor(Window::renderer, 0, 0, 0, 255);

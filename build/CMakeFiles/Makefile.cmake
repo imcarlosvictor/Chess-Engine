@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -23,9 +24,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
   "/usr/local/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
   "/usr/local/share/cmake-3.22/Modules/Compiler/GNU.cmake"
-  "/usr/local/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
-  "/usr/local/share/cmake-3.22/Modules/FindPackageMessage.cmake"
-  "/usr/local/share/cmake-3.22/Modules/FindPkgConfig.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
@@ -46,5 +44,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/chess.dir/DependInfo.cmake"
+  "CMakeFiles/chessEngine.dir/DependInfo.cmake"
   )
